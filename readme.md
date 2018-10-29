@@ -60,7 +60,12 @@ class AnalizadorDatos
         {
             if (CumpleCondicion(DObj, ICondition))
             {
-                ICondition.PrintMessage();
+                MensajeUno();
+            }
+            else
+            {
+                MensajeDos();
+            
             }
         }
     }
@@ -68,10 +73,13 @@ class AnalizadorDatos
     {
     return condition.Check(Dobj);
     }
+    public void MensajeUno(string message)
+    { /*Mensaje predeterminado*/ }
+    public void MensajeDos(string message)
+    { /*Mensaje predeterminado*/ }
 }
 
 interface ICondition {
     bool Check(DataObject obj);
-    void PrintMessage();
 }
 ```
