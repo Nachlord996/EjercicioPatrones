@@ -10,7 +10,7 @@ Lo mismo sucede en el método CumpleCondición, el parámetro recibido es concre
 
 
 ## Ejercicio 2 y 3
-
+```cs
 abstract class DataObject{
     public string Descripcion { get;}
 }
@@ -74,3 +74,4 @@ interface ICondition {
     bool Check(DataObject obj);
     void PrintMessage();
 }
+```
